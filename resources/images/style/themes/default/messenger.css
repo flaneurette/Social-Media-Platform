@@ -1,0 +1,215 @@
+	body {
+		background-color: #eee;
+		background-image: url(/resources/images/bg-chat.png);
+		background-repeat: repeat;
+	}
+	
+	
+	#messenger-menu {
+		background-color: #e3e3e3;
+		height: 40px;
+		padding: 20px;
+		border-bottom: 1px solid #ddd;
+	}
+	
+	#messenger-menu-list {
+		height: 40px;
+		padding:20px;
+		overflow:scroll;
+		height:100vh;		
+	}
+	
+
+	#messenger {
+		height:90vh;
+		overflow:scroll;
+		overflow-x: hidden;
+	}
+
+	#messenger-list {
+		height:100vh;
+		overflow:scroll;
+		overflow-x: hidden;
+		overflow-y: hidden;
+	}
+	
+	#messenger-menu-desc {
+		padding: 10px;
+		background-color: lightblue;
+	}
+	
+	.messenger-image-follow {
+		width: 48px;
+		height: 48px;
+		float: left;
+		border-radius: 50%;
+		margin-top: -5px;
+		margin-right: 10px;
+	}
+
+	.messenger-image-follow-list {
+		width: 64px;
+		height: 64px;
+		float: left;
+		border-radius: 50%;
+		margin-top: -3px;
+		margin-right: 10px;
+		background-color:#fff;
+		border: 2px solid #000;
+	}
+	
+	.messenger-image-follow-list-new {
+		width: 64px;
+		height: 64px;
+		float: left;
+		border-radius: 50%;
+		margin-top: -3px;
+		margin-right: 10px;
+		background-color:#fff;
+		border: 2px solid green;
+	}	
+	
+	.messenger-name-profile {
+		font-size: 13px;
+		text-align: center;
+		clear: both;
+	}
+	
+	.messenger-image-follow-active {
+		width: 48px;
+		height: 48px;
+		float: left;
+		border-radius: 50%;
+		margin-top: -5px;
+		margin-right: 10px;
+		border: 2px solid green;
+	}	
+	
+	
+	.messenger-friend-item {
+		float:left;
+	}
+	
+	.messenger-friend-item-name {
+		float:left;
+	}
+	.messenger-friend-item-name-list {
+		float:left;
+		padding: 10px;
+	}
+	
+	
+	#messenger-no-friends {
+		float:left;
+	}
+
+	.messenger-chat {
+		min-height: 18px;
+		padding: 10px;
+		margin: 15px;
+		font-size: 16px;
+		border-radius: 5px;
+		clear: both;
+		box-shadow: 1px 1px 5px 0px #ddd;
+		background-color: #fff;
+		border-radius: 10px;
+		cursor: pointer;
+		opacity: 0.8;
+	}
+	
+	.messenger-text {
+		font-size: 16px !important;
+		color:#000!important;
+	}
+	
+
+	.messenger-image {
+		
+		
+	}
+	
+	#messenger-bubble {
+		background-color: lightblue;
+		padding: 20px;
+		position: absolute;
+		right: 30px;
+		bottom: 30px;
+		width: 30px;
+		height:30px;
+		border-radius: 50%;
+		box-shadow: 1px 1px 5px 0px #999;
+		z-index:5;
+	}
+
+	#messenger-start {
+		padding: 20px;
+		position: absolute;
+		right: 10px;
+		bottom: 10px;
+		height: 30px;
+		width: 30px;
+		position: absolute;
+		left: 10px;
+		bottom: 10px;
+		width:85vw;
+		float:left;
+	}
+	
+	#messenger-friend-name {
+		font-size: 13px;
+		float:left;
+		clear:both;
+	}
+	
+	#messenger-input {
+		width: 100%;
+		border-radius: 30px;
+		float: left;
+		background-color: #fff !important;
+		padding-left: 15px;
+		margin-left: -20px;
+	}
+	
+	#messenger-input:hover {
+		background-color: #fff !important;
+	}
+	
+	#messenger-send {
+		border-radius: 30px;
+		height: 42px;
+		width: 42px;
+		float: left;
+		display: block;
+		font-weight: 400;
+		line-height: 1.5;
+		color: #495057;
+		background-color: lightblue !important;
+		border-radius: 50%;
+		padding: 10px;
+		font-size: 15px;
+		font-family: "Segoe UI", Roboto, Arial, sans-serif;
+		margin-top: 6px;
+		margin-bottom: 4px;
+		margin-left: -42px;
+		background: url(/resources/images/icons/icon-message.png);
+		background-size: 25px;
+		background-repeat: no-repeat;
+		background-position-y: 8px;
+		background-position-x: 7px;
+	}	
+	
+	.messenger-photo {
+		float:left;
+	}
+	
+	.messenger-text {
+		margin-left: 33px;
+	}
+	
+	.messenger-image {
+		height: 41px;
+		width: 41px;
+		border-radius: 50%;
+		margin-left: -16px;
+		margin-top: -11px;
+	}
