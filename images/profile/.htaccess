@@ -1,0 +1,17 @@
+Options All -Indexes
+Options +FollowSymLinks
+
+RewriteEngine On
+
+RewriteCond %{REQUEST_METHOD}  ^(HEAD|TRACE|DELETE|TRACK) [NC,OR]
+RewriteCond %{HTTP_REFERER}    ^(.*)(<|>|'|%0A|%0D|%27|%3C|%3E|%00).* [NC,OR]
+RewriteCond %{REQUEST_URI}     ^/(,|;|<|>|.php|/{2,999}).* [NC,OR]
+RewriteCond %{REQUEST_URI}     ^/.*(.php|.php3|.php4|.php5|.php6|.php7|.php8|.phps|.pl|.py|.pyc|.pyo|.jsp|.asp|.htm|.html|.shtml|.phtml|.sh|.cgi|.exe).* [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} ^.*(winhttp|HTTrack|clshttp|archiver|loader|email|harvest|extract|grab|miner).* [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} ^.*(libwww|curl|wget|python|nikto|scan).* [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} ^.*(<|>|'|%0A|%0D|%27|%3C|%3E|%00).* [NC,OR]
+RewriteCond %{HTTP_COOKIE}     ^.*(<|>|'|%0A|%0D|%27|%3C|%3E|%00).* [NC,OR]
+RewriteCond %{QUERY_STRING}    ^.*(;|'|").*(union|select|insert|declare|drop|update|md5|benchmark).* [NC,OR]
+RewriteCond %{QUERY_STRING}    ^.*(localhost|loopback|127\.0\.0\.1).* [NC,OR]
+RewriteCond %{QUERY_STRING}    ^.*(<|>|'|%0A|%0D|%27|%3C|%3E|%00).* [NC]
+RewriteRule ^(.*)$ /500.html [NC,L]
