@@ -9,4 +9,4 @@ Not for immediate production yet, testing only.
 # Requirements:
 
 Requires the latest PHP 8.3 en MySQL versions.
-Does not run on XAMPP.
+Does not run on XAMPP because it requires PHP 8.3.2.
