@@ -1,6 +1,6 @@
 # About
 
-This is an open source social media platform.
+This is an open source web and mobile responsive social media platform, with more features than most social media platforms. 
 
 Not for immediate production yet, testing only.
 
