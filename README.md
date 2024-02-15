@@ -2,15 +2,17 @@
 
 This is an open source web and mobile responsive social media platform, with more features than most social media platforms. 
 
+<img src="https://i.ibb.co/b3MbFGc/Untitled-1.png" />
+
 # App
 There is also and Android App available.
 
 # Messenger
 It includes a messenger/chatbox option.
 
-Not for immediate production yet, testing only.
+# Installation
 
-<img src="https://i.ibb.co/b3MbFGc/Untitled-1.png" />
+Not for immediate production yet, testing only. Because some URLS are hardcoded, it requires editing of a few files.
 
 # Requirements:
 
