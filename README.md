@@ -6,4 +6,5 @@ Not for production yet, testing only.
 
 # Requirements:
 
-Requires the lastest PHP 8.3 en MySQL versions.
+Requires the latest PHP 8.3 en MySQL versions.
+Does not run on XAMPP.
