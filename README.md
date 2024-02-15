@@ -6,4 +6,4 @@ Not for production yet, testing only.
 
 # Requirements:
 
-Requires the lastest PHP en MySQL versions.
+Requires the lastest PHP 8.3 en MySQL versions.
