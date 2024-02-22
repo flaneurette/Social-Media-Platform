@@ -14,6 +14,10 @@ It includes a messenger/chatbox option.
 
 Not for immediate production yet, testing only. Because some URLS are hardcoded, it requires editing of a few files.
 
+# MySQL
+
+STRICT_TRANS_TABLES is not supported, and needs to be disabled for it to work
+
 # Requirements:
 
 Requires the latest PHP 8.3 en MySQL versions.
