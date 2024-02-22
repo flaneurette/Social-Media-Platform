@@ -5,7 +5,7 @@ This is an open source web and mobile responsive social media platform, with mor
 <img src="https://i.ibb.co/b3MbFGc/Untitled-1.png" />
 
 # App
-There is also and Android App available.
+There is also an Android App available.
 
 # Messenger
 It includes a messenger/chatbox option.
