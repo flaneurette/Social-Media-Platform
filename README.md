@@ -2,7 +2,7 @@
 
 This is an open source web and mobile responsive social media platform, with more features than most social media platforms. 
 
-<img src="https://i.ibb.co/b3MbFGc/Untitled-1.png" />
+<img src="https://i.ibb.co/Rv4zyJ8/Untitled-2.png" />
 
 # App
 There is also an Android App available.
