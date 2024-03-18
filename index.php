@@ -139,7 +139,7 @@ if(isset($_POST["csrf"])) {
 						?>
 						</div>
 						<div id="login-loader-signup"> 
-						<div id="login-loader-form">Or: <form name="signup" action="/signup" method="POST"><input type="submit" id="login-loader-button" name="Signup" value="Signup to Twigpage"  /></form></div>
+						<div id="login-loader-form">Or: <form name="signup" action="./signup" method="POST"><input type="submit" id="login-loader-button" name="Signup" value="Signup to Twigpage"  /></form></div>
 						</div> 
 
 					</div>

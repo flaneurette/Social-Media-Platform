@@ -3,6 +3,9 @@
 <script src="<?php echo $host;?>resources/js/Emojis.js?rev=1.7.1" type="text/javascript"></script>
 <?php
 
+$showbubblewarning = '';
+$mobile = '';
+
 	if(isset($_SESSION['uid'])) {
 		
 		$stmt = $mysqli->prepare("SELECT COUNT(message) FROM messenger where toid = ? AND readit != ?");
@@ -40,5 +43,5 @@ if(isset($_REQUEST['mobile']) == true || $mobile == true) {
 <div id="messenger-frame"><iframe src="/messenger/" frameborder="0" id="messenger-iframe"></iframe></div>
 
 <div id="footer"> 
-	<a href="https://www.twigpage.com/contents/privacy/">Privacy Policy</a> &amp; <a href="https://www.twigpage.com/contents/terms/">Terms</a>
+	<a href="<?php echo $host;?>contents/privacy/">Privacy Policy</a> &amp; <a href="<?php echo $host;?>contents/terms/">Terms</a>
 </div>

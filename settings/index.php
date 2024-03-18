@@ -404,7 +404,9 @@
 			array_push($userprofile,$bodycolor);
 			array_push($userprofile,$textcolor);
 			array_push($userprofile,$background);
-		}	
+		}
+
+
 ?>
 <!DOCTYPE html>
 <html>

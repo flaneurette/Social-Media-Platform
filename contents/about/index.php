@@ -30,7 +30,7 @@
 							<strong>Joining</strong>
 							
 							<div class="content-text"> 
-							You can sign up at this page: <a href="../../signup/">signup</a>
+							You can sign up at this page: <a href="../../socialmedia/signup/">signup</a>
 							</div>
 													
 						</div>

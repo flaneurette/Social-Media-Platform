@@ -290,14 +290,14 @@ var Social = {
 			try { 
 				var titleText = title.replace('fakepath\\','');
 				titleText = titleText.split('\\');
-				document.getElementById(id).src = 'https://www.twigpage.com/resources/images/icons/file-selected.png';
+				document.getElementById(id).src = '<?php echo $host;?>images/icons/file-selected.png';
 				document.getElementById(id).title = titleText[1];
 				document.getElementById(id).alt = titleText[1];
 			} catch(e) { }
 			
 			try {
 				document.getElementById(buttonId).addEventListener("click", function () {
-				Social.uploadProgress('https://www.twigpage.com/init/progress.php','progress-bars','progress-bar-upload');
+				Social.uploadProgress('<?php echo $host;?>init/progress.php','progress-bars','progress-bar-upload');
 				}, true);
 			} catch(e) { }
 		}
@@ -501,7 +501,7 @@ var Social = {
 		opt.className = 'profile-reply-button';
 		
 		opt.addEventListener("change", function () {
-			Social.uploadProgress('https://www.twigpage.com/init/progress.php','progress-bars','progress-bar-upload');
+			Social.uploadProgress('<?php echo $host;?>init/progress.php','progress-bars','progress-bar-upload');
 		}, true);
 	
 		options.appendChild(opt);	
@@ -728,7 +728,7 @@ var Social = {
 									 var element4 = document.createElement('div');
 									 element4.className = 'messenger-image';
 									 element4.id = 'messenger-image' + i;
-									 element4.style = "background:url('https://www.twigpage.com/"+photo.replace('//','/')+"') !important; background-size: cover!important; background-color: #fff!important;";
+									 element4.style = "background:url('<?php echo $host;?>"+photo.replace('//','/')+"') !important; background-size: cover!important; background-color: #fff!important;";
 									 
 									 document.getElementById('messenger').appendChild(element1);
 									 document.getElementById('messenger-chat' + i).appendChild(element2);

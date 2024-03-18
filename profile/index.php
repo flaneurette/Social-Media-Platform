@@ -25,7 +25,8 @@
 	}
 
 	if(isset($_REQUEST['profileid'])) {
-		$profile = $db->clean($_REQUEST['profileid'],'encode');
+		$pid = str_replace('@','',$_REQUEST['profileid']);
+		$profile = $db->clean($pid,'encode');
 		$check 	= $db->select('profile','*','username',$profile);	
 		$profileid = $db->intcast($check[0]['id']);
 

@@ -7,7 +7,7 @@
 
 	$db 	= new sql();
 	$social = new social();
-	$host 	= 'https://www.twigpage.com/';
+	$host 	= '<?php echo $host;?>';
 	$toid 	= $db->intcast($_REQUEST['toid']);
 
 	// login check
@@ -84,10 +84,10 @@
 	<meta name="revisit-after" content="3 days">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 
-	<link href="https://www.twigpage.com/resources/style/themes/default/reset.css?rev=1.6.41<?php echo time();?>" rel="stylesheet">
-	<link href="https://www.twigpage.com/resources/style/themes/default/style.css?rev=1.6.41<?php echo time();?>" rel="stylesheet">
-	<link href="https://www.twigpage.com/resources/style/themes/default/mobile.css?rev=1.6.41<?php echo time();?>" rel="stylesheet">
-	<link href="https://www.twigpage.com/resources/style/themes/default/messenger.css?rev=1.6.41<?php echo time();?>" rel="stylesheet">
+	<link href="<?php echo $host;?>style/themes/default/reset.css?rev=1.6.41<?php echo time();?>" rel="stylesheet">
+	<link href="<?php echo $host;?>style/themes/default/style.css?rev=1.6.41<?php echo time();?>" rel="stylesheet">
+	<link href="<?php echo $host;?>style/themes/default/mobile.css?rev=1.6.41<?php echo time();?>" rel="stylesheet">
+	<link href="<?php echo $host;?>style/themes/default/messenger.css?rev=1.6.41<?php echo time();?>" rel="stylesheet">
 	</head>
 	<body>
 	
@@ -183,7 +183,7 @@
 		
 	<div id="messenger-start">
 	<input type="text" id="messenger-input" onfocus="Social.pingMessenger('typing');" placeholder="Send a message to <?php echo $friend_name;?>" autocomplete="off" spellcheck="false"/><input type="button" onclick="Social.postMessenger('post','messenger-input','<?php echo $uid;?>','<?php echo $toid;?>','<?php echo $csrf;?>','<?php echo $db->clean($profile[0]["photo"],'encode');?>');" name="submit" value="" id="messenger-send" /></div>
-	<script src="https://www.twigpage.com/resources/js/main.js?rev=1.5.6<?php time();?>" type="text/javascript"></script>
+	<script src="<?php echo $host;?>js/main.js?rev=1.5.6<?php time();?>" type="text/javascript"></script>
 	<script>
 	Social.scroller('bottom','fetch','messenger','<?php echo $friend_uid;?>','<?php echo $friend_uid;?>','<?php echo $csrf;?>','<?php echo $friend_photo;?>');
 	document.getElementById('messenger-input').focus();

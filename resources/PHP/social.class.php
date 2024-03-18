@@ -31,7 +31,7 @@ class social {
 				} elseif(stristr(strtolower($value),'.ogg') || stristr(strtolower($value),'.opus')) {
 				return "<br /><audio controls><source src=\"".$this->clean($value,'encode')."\" type=\"audio/ogg\"></audio>";
 				} else {
-				return  "<img src='https://www.twigpage.com".$this->clean($value,'encode')."' class='twig-image' />"; 
+				return  "<img src='<?php echo $host;?>".$this->clean($value,'encode')."' class='twig-image' />"; 
 			}
 		}
 	}
@@ -60,7 +60,7 @@ class social {
 			$value = $this->clean($result,'encode');
 		
 			// bandcamp integration
-			$bandcamp_url = 'https://www.twigpage.com/resources/PHP/bandcamp.php?embed=';
+			$bandcamp_url = '<?php echo $host;?>PHP/bandcamp.php?embed=';
 			$bandcamp_error = 'Bandcamp failed to load. Reload the page, or please contact support.';
 			
 			// initialize an append value.
@@ -139,7 +139,7 @@ class social {
 		$regex = "/\#[a-zA-Z0-9.]+[\s]{0,3}\s/i";
 		
 		if(preg_match_all($regex,$value,$matches)) {
-			$value = preg_replace('/\#[a-zA-Z0-9.]+[\s]{0,3}/i', '<a href="https://www.twigpage.com/'.$this->clean('$0','encode').'">'.$this->clean('$0','encode').'</a>', $value);			
+			$value = preg_replace('/\#[a-zA-Z0-9.]+[\s]{0,3}/i', '<a href="<?php echo $host;?>'.$this->clean('$0','encode').'">'.$this->clean('$0','encode').'</a>', $value);			
 		}
 
 
@@ -149,7 +149,7 @@ class social {
 			if(preg_match_all($regex,$value,$matches)) {
 				$cnt = count($matches[0]);
 				
-				$value = preg_replace('/\@[a-zA-Z0-9.]+[\s]{0,2}/i', '<a class="corn" href="https://www.twigpage.com/'.$this->clean('$0','encode').'">'.$this->clean('$0','encode').'</a>', $value);			
+				$value = preg_replace('/\@[a-zA-Z0-9.]+[\s]{0,2}/i', '<a class="corn" href="<?php echo $host;?>'.$this->clean('$0','encode').'">'.$this->clean('$0','encode').'</a>', $value);			
 
 			}
 		}

@@ -116,7 +116,7 @@ if(isset($_POST["csrf"])) {
 
 			$email 		= str_replace(';','',$email);
 			$username 	= $username;
-			$body 		= 'Hello, please verify your signup: https://www.twigpage.com/verified'.$hash;
+			$body 		= 'Hello, please verify your signup: <?php echo $host;?>verified'.$hash;
 			$subject 	= 'Welcome to Twigpage';
 
 			mail($email,$subject,$body,"From: Twigpage <info@twigpage.com>");
@@ -168,7 +168,7 @@ if(isset($_POST["csrf"])) {
 						<div id="captcha"><img src="../resources/PHP/mail/captcha/index.php" height="67" /></div>
 						<span>Solve captcha: </span> <input type="text" name="captcha" id="signup-captcha" />
 						
-						By signing up you will agree to our <a href="https://www.twigpage.com/contents/privacy/" target="_blank" >privacy policy</a> &amp; <a href="https://www.twigpage.com/contents/terms/" target="_blank" >terms</a>
+						By signing up you will agree to our <a href="<?php echo $host;?>contents/privacy/" target="_blank" >privacy policy</a> &amp; <a href="https://www.twigpage.com/contents/terms/" target="_blank" >terms</a>
 						<br />
 						<input type="submit" name="post" value="Signup" style="margin-bottom:33px!important;" />
 						</form>

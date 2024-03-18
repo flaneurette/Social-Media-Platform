@@ -1,17 +1,17 @@
 <?php
 
-error_reporting(0); 	// production values
-ini_set('display_errors', 0);   // production values
-ini_set('session.cookie_lifetime', 35650000);
-ini_set('session.gc_maxlifetime', 35650000);
+//error_reporting(0); 	// production values
+//ini_set('display_errors', 0);   // production values
+//ini_set('session.cookie_lifetime', 35650000);
+//ini_set('session.gc_maxlifetime', 35650000);
 
 mysqli_report(MYSQLI_REPORT_ERROR | MYSQLI_REPORT_STRICT);
 
 define('CHARSET', 'utf8');
 define('HOST', 'localhost');
 define('DATABASE', 'social');
-define('USERNAME', 'root');
-define('PASSWORD', '');
+define('USERNAME', 'admin');
+define('PASSWORD', 'LoveIsAll!1');
 
 $mysqli = new mysqli("localhost", USERNAME, PASSWORD, DATABASE);
 

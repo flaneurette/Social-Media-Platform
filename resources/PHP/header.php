@@ -2,6 +2,7 @@
 
 error_reporting(0);
 
+
 ini_set('display_errors', 0); 
 ini_set('session.cookie_httponly', 1);
 ini_set('session.use_only_cookies', 1);
@@ -12,9 +13,10 @@ header("X-Frame-Options: DENY");
 header("X-XSS-Protection: 1; mode=block"); 
 header("Strict-Transport-Security: max-age=30");
 header("Referrer-Policy: same-origin");
-	
+
+
 // header
-$host = 'https://www.twigpage.com/';
+$host = 'http://85.215.153.159/'; 
 
 $count_mentions = 0;
 
@@ -96,7 +98,7 @@ if(isset($_SESSION['uid']) && $_SESSION['uid'] !='') {
 							
 						<?php
 						} else {
-							echo '<li id="nav-right"><a href="https://www.twigpage.com/signup/">Signup</a></li>';
+							echo '<li id="nav-right"><a href="./signup/">Signup</a></li>';
 						}
 						?>
 						</div>

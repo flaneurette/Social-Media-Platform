@@ -7,7 +7,7 @@
 
 	$db 	= new sql();
 	$social = new social();
-	$host 	= 'https://www.twigpage.com/';
+	$host 	= '<?php echo $host;?>';
 	$toid 	= $db->intcast($_REQUEST['toid']);
 
 	// login check
@@ -96,10 +96,10 @@
 	<meta name="revisit-after" content="3 days">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 
-	<link href="https://www.twigpage.com/resources/style/themes/default/reset.css?rev=1.6.41<?php echo time();?>" rel="stylesheet">
-	<link href="https://www.twigpage.com/resources/style/themes/default/style.css?rev=1.6.41<?php echo time();?>" rel="stylesheet">
-	<link href="https://www.twigpage.com/resources/style/themes/default/mobile.css?rev=1.6.41<?php echo time();?>" rel="stylesheet">
-	<link href="https://www.twigpage.com/resources/style/themes/default/messenger.css?rev=1.6.41<?php echo time();?>" rel="stylesheet">
+	<link href="<?php echo $host;?>style/themes/default/reset.css?rev=1.6.41<?php echo time();?>" rel="stylesheet">
+	<link href="<?php echo $host;?>style/themes/default/style.css?rev=1.6.41<?php echo time();?>" rel="stylesheet">
+	<link href="<?php echo $host;?>style/themes/default/mobile.css?rev=1.6.41<?php echo time();?>" rel="stylesheet">
+	<link href="<?php echo $host;?>style/themes/default/messenger.css?rev=1.6.41<?php echo time();?>" rel="stylesheet">
 	</head>
 	<body>
 	
