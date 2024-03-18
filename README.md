@@ -10,4 +10,9 @@ Mod_rewrite
 
 # Installation
 
-Edit /resources/php/header.php to enter URL / database info
+Edit /resources/php/header.php to enter URL 
+Edit /resources/php/db.class.php for database info
+
+Then:
+Import SQL file into MySQL.
+
