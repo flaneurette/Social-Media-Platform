@@ -11,7 +11,7 @@ define('CHARSET', 'utf8');
 define('HOST', 'localhost');
 define('DATABASE', 'social');
 define('USERNAME', 'admin');
-define('PASSWORD', 'LoveIsAll!1');
+define('PASSWORD', '');
 
 $mysqli = new mysqli("localhost", USERNAME, PASSWORD, DATABASE);
 
