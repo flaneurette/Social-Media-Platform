@@ -21,5 +21,6 @@ STRICT_TRANS_TABLES is not supported, and needs to be disabled for it to work
 
 # Requirements:
 
+Requires MOD_REWRITE to be enabled.
 Requires the latest PHP 8.3 en MySQL versions.
 Does not run on XAMPP because it requires PHP 8.3.2.
