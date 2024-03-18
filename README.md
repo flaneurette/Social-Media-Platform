@@ -22,3 +22,9 @@ Then:
 
 Import SQL file into MySQL.
 
+And chmod all image folders, such as /media/ to either 0755 or 0777.
+
+# Running it
+
+It then should run out of the box, be mindful, however, that this package is under development and some parts may not work correctly.
+
