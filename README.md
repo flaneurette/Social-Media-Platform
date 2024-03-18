@@ -12,7 +12,8 @@ It includes a messenger/chatbox option.
 
 # Installation
 
-Not for immediate production yet, testing only. Because some URLS are hardcoded, it requires editing of a few files.
+Not for immediate production yet, testing only. Because some URLS are hardcoded, it requires editing of a few files:
+/resources/php/header.php (contains most configuration data.)
 
 # MySQL
 
