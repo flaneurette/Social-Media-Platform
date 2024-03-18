@@ -6,7 +6,7 @@ This is an open source social media platform.
 
 PHP 8.3
 
-Latest MySQL (STRICT_TRANS_TABLES diabled)
+Latest MySQL (STRICT_TRANS_TABLES disabled)
 
 Mod_rewrite
 
