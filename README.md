@@ -2,7 +2,7 @@
 
 This is an open source social media platform.
 
-<img src="https://i.ibb.co/h9qRHtM/Untitled-2.png" />
+<img src="Untitled-2.png" />
 
 # Requirements
 
