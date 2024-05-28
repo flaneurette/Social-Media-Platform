@@ -2,7 +2,7 @@
 
 This is an open source social media platform.
 
-<img src="Untitled-2.png" />
+<img src="https://github.com/flaneurette/Social-Media-Platform/blob/main/images/Untitled-2.png" />
 
 # Requirements
 
